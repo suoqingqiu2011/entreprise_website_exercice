@@ -1,0 +1,41 @@
+
+
+	hr.spip {
+		display:block; 
+		height:2px; 
+		border:0; 
+		border-top:0 dotted #efefef; 
+		margin:0 0 10px 0; 
+		padding:0; 
+		clear:both; 
+		visibility:visible;
+		background: url(../images/dot-horizontal.png) repeat-x left center;
+		-webkit-margin-before: 0.5em;
+		-webkit-margin-after: 0.5em;
+		-webkit-margin-start: auto;
+		-webkit-margin-end: auto;
+		border-width: 1px;
+	}
+	
+	
+	 #main-text   p{
+		line-height: 150%;
+		margin-bottom: 20px;
+		display: block;
+	}
+	
+	 #main-text  .photos_left {
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	
+	#main-text  .photos_right {
+		float: right;
+		margin-left: 15px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	
+	

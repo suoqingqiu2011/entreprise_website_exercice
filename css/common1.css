@@ -1,0 +1,234 @@
+
+.login-box  button,
+.login-box input{
+		margin:0;
+		padding:0;
+		}
+
+.login-box  button,
+.login-box input{
+	font:12px/1.5 "microsoft yahei",tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif
+}
+
+.login-box  h4{
+font-size:100%;
+font-size: 1.5em;
+font-weight: bold;
+color: #3675C1;
+text-shadow: 1px 1px #fff,2px 2px #DDD;
+}
+
+
+.login-box  button,
+.login-box  input{font-size:100%}
+
+.login-box  input,
+.login-box  button{vertical-align:middle;}
+
+
+
+.lightbox-bg{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    background:#fff8e8;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    z-index:4000;
+}
+  
+  
+  
+.login-box{
+    height:225px;
+    background:#fff;
+    margin-bottom:10px;
+	padding-top:0px;
+}
+.login-box-top{
+  height:8px;
+  background:url(../images/start-game-line.png);
+}
+.login-box-in{}
+.login-box-bottom{display:none;}
+.login-box a{color:#A5A5A5;}
+.login-box .user-share{
+  text-align:center;
+  padding-top:14px;
+}
+.user-share span{
+    float:left;
+    padding-left:15px;
+}
+
+
+
+.user-login{}
+.user-login .bd{
+    padding:14px 14px 0;
+}
+.user-login-form{
+    position:relative;
+    zoom:1;
+}
+#login-username{
+  font-weight:bold;
+}
+.user-login-form .txt{
+    border:1px solid #A8A8A8;
+    background:#fff;
+    border-radius:1px;
+    width:207px;
+    padding:2px 3px;
+    color:#333;
+    height:30px;
+    line-height:30px;
+    font-family: verdana;
+}
+.user-login-form .txt.focus,
+.user-login-form .txt:focus{border-color:#777;}
+.user-login-form .login-btn{margin-right: 4px;}
+.user-login-form .item{position:relative;margin-bottom:7px;}
+.user-login-form .item1 label,
+.user-login-form .item2 label{
+    font-size: 14px;
+    left: 10px;
+    position: absolute;
+    top: 8px;
+    *top:10px;
+    color:#A5A5A5;
+    display:none;
+}
+.user-login-form .item3{
+    padding:5px 0 8px;
+    overflow:hidden;
+    color:#A5A5A5;
+}
+.user-login-form .item3 *{vertical-align:top;}
+.user-login-form .item3 span{
+    float:right;
+    height:14px;
+    line-height:14px;
+    overflow:hidden;
+}
+.user-login-form .item3 .remember{
+    border-right:1px solid #A5A5A5;
+    margin-right: 13px;
+    padding: 0 13px 0 18px;
+    position:relative;
+    display:none;
+}
+.user-login-form .item3 .remember input{
+    position:absolute;
+    left:0;
+    top:1px;
+    *top:-3px;
+}
+.user-login-form .item3 a{
+}
+
+.user-login-form .tip{
+  margin-bottom:0;
+}
+.user-login-form .tip a{
+  color: red;
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+
+
+.user-logged{
+    color:#980000;
+}
+.user-logged .bd{
+    padding:18px 20px 0;
+}
+.user-logged ul{}
+.user-logged .item{
+    padding-bottom:14px;
+    position:relative;
+    *width:100%;
+    clear:both;
+    overflow:hidden;
+}
+.user-logged .name{
+    color:#E86211;
+    float:left;
+    max-width:126px;
+    _width:120px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.user-logged .login-out-btn{
+    position:absolute;
+    right:0;
+    top:0;
+    color:#E86211;
+}
+.user-logged .complete-info-btn{
+  border-radius: 2px;
+  border:1px solid #B2310A;
+  background: #E56B00;
+  float: left;
+  padding-top: 1px;
+  color: #fff;
+}
+.user-logged .complete-info-btn span{
+  background: #C63A10;
+  display: block;
+  font-size: 14px;
+  padding: 2px 20px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+.user-logged .latest-server{
+    color:#F98100;
+    font-size:14px;
+    background:#E5E5E5;
+    padding:4px 15px;
+    float:left;
+    margin-top:3px;
+    font-weight: bold;
+}
+
+
+
+.layout-side{
+    float:left;
+    display:inline;
+    width:243px;
+    _overflow:hidden;
+
+}
+.layout-main{
+    float:right;
+    display:inline;
+    width:726px;
+    margin-top:72px;
+    position:relative;
+	margin-bottom:60px;
+
+}
+
+.layout-main-block-B{
+  background-color:#fff;
+  border-left:1px solid #D6D2CC;
+  border-right:1px solid #D6D2CC;
+}
+.layout-main-block-C{
+  background-color:#fff;
+  border:1px solid #D6D2CC;
+  border-top:1 none;
+  padding:20px;
+}
+
+
+
+.login-box{
+    height:225px;
+    background:#fff;
+    margin-bottom:10px;
+	padding-top:0px;
+}

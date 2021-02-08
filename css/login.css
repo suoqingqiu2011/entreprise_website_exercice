@@ -1,0 +1,14 @@
+
+
+input,button{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;margin:0;padding:0;}
+.button{background-color:#3675C1; right: 30px;}
+
+
+.login{position:relative;height:40px;line-height:40px;float:right;margin-right:24px;padding-top:32px;margin-right:12px;}
+.login-box{float:left;}
+.marr-number{float:left;color:#3675C1;font:normal 14px/22px "microsoft yahei";margin-right:12px;*line-height:30px;}
+.marr-number strong{color:#3675C1;font-weight:bold;}
+.login-box input{width:126px;height:21px;border:1px solid #e8e8e8;padding:0 4px;line-height:22px;color:#cfcfcf;font-size:12px;font-family:"microsoft yahei";vertical-align:middle;}
+.user-name {right:300px;}
+.pass-word {right:200px;}
+

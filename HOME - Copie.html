@@ -1,0 +1,502 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="@my_coder"/>
+	<title>Conseil</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/nivo-slider.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript" src="js/bxslider.js"></script>
+	<script type="text/javascript" src="js/ztwitterfeed.js"></script>
+	<script type="text/javascript" src="js/jflickrfeed.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/jqueryui.js"></script>
+	
+<!--	<script type="text/javascript" src="js/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/scrollPic.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/font-face.css" />
+	<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+	
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	</head>		
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		
+		<style type="text/css">
+		
+			.main-header .fourteen {
+				height: 86px;
+				
+			}
+			#caption-text-wrap .header, #caption-text-wrap .text {
+				background: url(images/bg_for_ie.png);
+			}
+			#menu-header-menu {
+				margin-top:15px;
+				margin-right:100px;
+			}
+			
+			.main-header #newlogo1 img {
+				left:940px;
+				
+			}
+			.main-header #newlogo2 img  {
+				left:1050px;
+			}
+			.main-header .newlogo img {
+				position: absolute;
+				top: 12px;
+				z-index: 2;
+			}
+			.nav_fixed{
+				background: #12589e;
+				height:60px;
+				padding-bottom:5px;
+				box-shadow:0px 6px 25px #999999;
+			}
+			.nav_top{
+				margin-top:10px;
+			}
+			.nav_top_des{
+				padding-left:330px;
+			}
+			.ch{ 
+				background-size:75%;
+				border:1px sold #fff;
+			}
+			
+			.ch1{
+				background: url(../images/slider-bg.png);
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+			
+			.country{
+				background-color:#12589e; 
+				height:36px;
+				margin:0px;
+				z-index:10;
+			}
+			.nav_c{
+				display:none;
+			}
+			
+			#menu-header-menu{
+			 color:#fff;
+			 float:left;
+			 margin-top:15px;
+			}
+			.sub-menu li{
+				vertical-align: middle;
+			}
+			.sub-menu li:hover{
+				background-color:#6ca2d8;
+				color:#ffffff;
+				vertical-align: middle;
+			}
+			.sub-menu .flag{
+				height:10px;
+				width:12px;
+				padding-right:10px;
+			}
+			
+			#nouvelle{list-style:none;}
+			@font-face {
+                font-family: 'urow';
+                src: url(iconfont.woff) format('woff');
+            }
+			.icon-home:before {
+				content:"\f015";
+			}
+			
+			.icon-company:before{
+				content:"\f0f2";
+			}
+			
+			.icon-client:before{
+				content:"\f0e8";
+			}
+			
+			.icon-contact:before{
+				content:"\f098";
+			}
+			
+			#blog-slider li{margin-left:39px; margin-right:39px;}
+			
+			#blog-slider li img{
+				width:200px;
+				height:200px;
+				border:2px #000 solid;
+				border-radius:35px;
+				margin:5px;
+			}
+			
+			.bord_img{
+				width:225px; 
+				height:225px; 
+				border:4px #fff solid; 
+				border-radius:25px;
+			}
+			
+			.img_roll{border:0; width:260px; height:200px; }
+			.scroll{width:1200px;height:210px;}
+			.scroll_left{margin:50px; width:23px;height:63px;background:url(images/arrows.png) #222 no-repeat;float:left;}
+			.scroll_right{margin:50px; width:23px;height:63px;background:url(images/arrows.png) #222 left no-repeat; background-position: -36px 0; float:left;}
+			.pic{height:173px;float:left;}
+			.pic ul{display:block;}
+			.pic li{float:left;display:inline;width:320px;text-align:center; margin-left:5px; margin-right:5px;}
+			
+			
+			.case_li {float:left; position:relative; top:0px; left:0px; overflow:hidden; border-left: 1px #fff solid; border-right: 1px #fff solid;}
+			.case_li_txt{width:270px; height:62px; margin-left:25px; background:#ffffff;filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8; top:128px; left:0px; position:absolute; overflow:hidden;}
+			.case_li_txt_hover{width:270px; height:62px; margin-left:25px; background:#000000;filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8; top:100px; left:0px; position:absolute; overflow:hidden;}
+			.span_mr_txt{width:90%; text-align:left; margin:auto; padding:6px 0px; line-height:15px; color:#333333;}
+			.span_font{width:90%; text-align:left; margin:auto; padding:6px 0px; line-height:15px; color:#ffffff;}
+			.span_detail{width:90%; margin:auto; text-align:left; }
+			.span_detail a{color:#c0c46d; text-decoration:underline;}
+			.span_detail a:hover{color:#c0c46d; text-decoration:none;}
+			</style>
+
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCbEJ826CbvSGwFTtO-KTWoowpdn3GxF50&sensor=true"></script>
+	<script>
+
+		var nt = !1;
+		$(window).bind("scroll",function() {
+		var st = $(document).scrollTop();
+		nt = nt ? nt: $("#container2").offset().top;
+		
+		var nav_head=$("#header");
+		var nav_contenu = $("#container1");
+		var nav_pays = $("#country");		
+		var nav_pays2 = $(".pays");
+		
+		var nav_change= $("#logo");
+		var nav_change1= $(".fourteen.columns");
+		
+		if (nt < st ) {
+		nav_head.addClass("nav_fixed");
+		nav_contenu.removeClass("nav_top");
+		nav_contenu.addClass("nav_top_des");
+		
+		nav_pays.removeClass("country");
+		nav_pays2.addClass("nav_c");
+		
+		nav_change.addClass("ch");
+		nav_change1.removeClass("ch1");
+		
+		
+		} else {
+		nav_head.removeClass("nav_fixed");				
+		nav_contenu.addClass("nav_top");
+		nav_contenu.removeClass("nav_top_des");
+		
+		nav_pays.addClass("country");
+		nav_pays2.removeClass("nav_c");
+		
+		nav_change.removeClass("ch");
+		
+		nav_change1.addClass("ch1");
+	    
+		}
+		});
+		
+		
+		function over_text(x){
+			x.style.height="210px";
+			x.style.width="210px";
+		}
+		function remove_text(x){
+			x.style.height="200px";
+			x.style.width="200px";
+		}
+		
+		$(function(){
+		   $("#blog-slider li").hover(function(){
+			  $(".blog-slider-text-wrap",this).css({"color":"#12589e","text-shadow": "2px 2px #fff,2px 2px #DDD"});	 	       
+		   },function(){
+			  $(".blog-slider-text-wrap",this).css({"color":"#ffffff","text-shadow": "2px 2px #000,2px 2px #DDD"});		  
+		   })
+		})
+		
+</script>
+
+<script>
+window.onload = function(){
+    scrollPic();
+}
+function scrollPic() {
+    var scrollPic = new ScrollPic();
+    scrollPic.scrollContId   = "scrollPic"; //内容容器ID
+    scrollPic.arrLeftId      = "LeftArr";//左箭头ID
+    scrollPic.arrRightId     = "RightArr"; //右箭头ID
+
+    scrollPic.frameWidth     = 930;//显示框宽度
+    scrollPic.pageWidth      = 104; //翻页宽度
+
+    scrollPic.speed          = 10; //移动速度(单位毫秒，越小越快)
+    scrollPic.space          = 10; //每次移动像素(单位px，越大越快)
+    scrollPic.autoPlay       = true; //自动播放
+    scrollPic.autoPlayTime   = 3; //自动播放间隔时间(秒)
+
+    scrollPic.initialize(); //初始化
+}
+</script>
+
+
+
+<body id="to-top">
+
+	<header>
+		<div id="header" class="main-header">
+			<div id="country" class="country" >
+			<ul id="menu-header-menu" class="menu" style="margin-top:0px;">
+				<li class="pays" style="padding-top:0px; ">Pays
+					<ul class="sub-menu"  style="top:-15px; width:220px">
+						<li class="triangle" style="margin-left:-18px;" ><img src="images/triangle1.png" /></li>
+						<li><a href="#" target="blank"><img class="flag" src="images/cn.png" /></span>cn</a></li>
+						<li><a href="#" target="blank"><img class="flag" src="images/en.png" /></span>en</a></li>
+						<li><a href="#" target="blank"><img class="flag" src="images/fr.png" />fr</a></li>
+					</ul>
+				</li>
+			
+				<li class="pays" style="padding-top:0px;">Choix actuel
+					<a id="flag_choix" href="#" target="blank" style="z-index:1;">
+					<img class="flag" src="images/fr.png" style="height:10px; width:12px; padding-left:10px; padding-right:10px;"/>fr</a>					
+				</li>
+			</ul>
+			</div>
+			
+			<div id="container1" class="nav_top container">
+				<div class="two columns" id="logo-wrap">
+					<a class="logo" href="HOME.html"><div id="logo" class="logo1"></div></a>
+					
+				<!--<div class="newlogo">
+					<a id="newlogo1" href="http://limos.isima.fr/" target="blank"><img src="images/limos.png" alt="Logo LIMOS"/></a>
+					<a id="newlogo2" href="http://www.cnstn.rnrt.tn/" target="blank"><img src="images/cnstn.png" alt="Logo CNSTN"></a>
+				</div>-->
+									
+				</div>
+				<div class="fourteen columns ch1">
+					<nav>
+						<ul id="menu-header-menu" class="menu">
+							<li class="icon-home" ><a href="HOME.html">Accueil</a>
+								
+							</li>
+							<li class="icon-company"><a href="HOME.html">Société</a>
+								<ul class="sub-menu">
+									<li class="triangle"><img src="images/triangle.png" /></li>
+									<li><a href="#" target="blank">Introduction</a></li>
+			
+								</ul>
+							</li>
+							<li class="icon-client" ><a href="HOME.html">Client Group</a>
+								<ul class="sub-menu">
+									<li class="triangle"><img src="images/triangle.png" /></li>
+									<li><a href="#" target="blank">partners</a></li>
+									
+								</ul>
+							</li>
+							
+							<li class="icon-contact"><a href="REGISTER.html">Contact</a>
+								<ul class="sub-menu">
+									<li class="triangle"><img src="images/triangle.png" /></li>
+									<li><a href="#">Coordonnées</a></li>
+									
+								</ul>
+							</li>				
+						</ul>				
+					</nav>
+				</div>
+				<br class="clear" />
+				
+			</div>
+		</div>
+	</header>
+	
+	<div id="slider-wrapper" class="slider-wrapper theme-default">
+		<div id="slider" class="nivoSlider">
+
+			<img src="images/grp_img1.jpg"  alt="" title="#htmlcaption1" />
+			<img src="images/grp_img2.jpg" alt="" title="#htmlcaption2" />
+			<img src="images/grp_img3.jpg" alt="" title="#htmlcaption3" />
+		</div>
+
+	</div>
+	<div id="htmlcaption1" class="nivo-html-caption">
+		<div id="caption-text-wrap">
+			<div class="header">Bienvenu à notre site</div>
+			<div class="text">Notre group connît ce domaine avec certitude </div>
+		</div>
+	</div>
+	<div id="htmlcaption2" class="nivo-html-caption">
+		<div id="caption-text-wrap">
+			<div class="header">Research &amp; Profession</div>
+			<div class="text">Nous vous offrons des meillieurs services</div>
+		</div>
+	</div>
+	<div id="htmlcaption3" class="nivo-html-caption">
+		<div id="caption-text-wrap">
+			<div class="header">Stratégique mondiale</div>
+			<div class="text">Des conseils seront proposés selon de nombreuses histoires à succès</div>
+		</div>
+	</div>
+	
+	<div id="container2" class="container" style=" width:1300px;">
+		
+		<br class="clear" />
+			
+		<div id="information-wrap" align="center">	
+			
+			<div class="intro" style="verflow: hidden;text-align: center;color: #3b485b; vertical-align: baseline; padding-bottom:80px; margin-bottom:20px; border-bottom: 4px solid #12589e; text-shadow: 1px 1px #000,1px 1px #DDD;">
+				<h2 style="font-size: 28px;line-height: 100px;">Systa -- Sincère et désintéressé </h2>
+				
+				<div class="news-text-wrap" >
+					<div class="news-wrap" style="margin: 0 auto;">
+						
+						<div class="news-text" > SYSTA est une société de services informatique implanté dans la ville de Paris. Fondée en 2005, elle procure à ses clients une offre de conseil , de conception et de développement de systèmes d'information basés sur le développement de logiciels spécifiques et sur l'utilisation de l'Internet.L'équipe de SYSTA se compose d'ingénieurs et techniciens possédant une vaste expérience du développement et de la maintenance de logiciels acquise en France ou à l'étranger auprès de grands groupes en .....&nbsp; <a href="#" class="more" ><strong>More</strong></a> </div>		
+						<div class="clear"></div></div>
+				</div>
+			</div>
+			
+			<div class="ten columns" id="ten" align="center" style="background:#12589e;   width: 1280px; padding-top:0;">
+			
+			<a href="#ten">
+			<div style="background:url(images/triangle_bas.png) no-repeat; margin-left:15px; height: 50px; width: 150px; background-size: 100% 90%;">
+			</div></a>
+				<div class="information-header" id="information-header1" style="padding-bottom:30px; padding-top: 30px; margin-bottom:30px; margin-left:40px;">
+					<div style="color:#fff;" >Nouvelle</div>
+				</div>
+					
+						<div class="scroll">
+							<div class="scroll_left" id="LeftArr"></div>
+							<div class="pic " id="scrollPic" style="overflow:hidden; position:relative; ">
+							<ul id="nouvelle"  >
+								<li class="case_li"><img class="img_roll" src="images/pic01.png" style="border:0; width:270px; height:200px; " alt="" />
+								<div class="case_li_txt">
+									 <div class="span_mr_txt">Fresh new Firebug 2 has been released and...</div>
+									 <div class="span_detail"><a href="#" onfocus="blur"> > detail</a></div>
+								</div></li>
+								<li class="case_li"><img class="img_roll" src="images/pic02.png" style="border:0; width:270px; height:200px; "  alt="" />
+								<div class="case_li_txt">
+								 <div class="span_mr_txt">Fresh new Firebug 2 has been released and...</div>
+								 <div class="span_detail"><a href="#" onfocus="blur"> > detail</a></div>
+							</div></li>
+								<li class="case_li"><img class="img_roll" src="images/pic03.png" style="border:0; width:270px; height:200px; "  alt="" />
+								<div class="case_li_txt">
+									 <div class="span_mr_txt">Fresh new Firebug 2 has been released and...</div>
+									 <div class="span_detail"><a href="#" onfocus="blur"> > detail</a></div>
+								</div></li>
+								<li class="case_li"><img class="img_roll" src="images/pic04.png" style="border:0; width:270px; height:200px; "  alt="" />
+								<div class="case_li_txt">
+									 <div class="span_mr_txt">Fresh new Firebug 2 has been released and...</div>
+									 <div class="span_detail"><a href="#" onfocus="blur"> > detail</a></div>
+								</div></li>
+								<li class="case_li">
+								<img class="img_roll" src="images/pic05.png" style="border:0; width:270px; height:200px; "  alt="" />
+								<div class="case_li_txt">
+									 <div class="span_mr_txt">Fresh new Firebug 2 has been released and...</div>
+									 <div class="span_detail"><a href="#" onfocus="blur"> > detail</a></div>
+								</div></li>
+								<li class="case_li">
+								<img class="img_roll" src="images/pic06.png" style="border:0; width:270px; height:200px; "  alt="" />
+								<div class="case_li_txt">
+									 <div class="span_mr_txt">Fresh new Firebug 2 has been released and...</div>
+									 <div class="span_detail"><a href="#" onfocus="blur"> > detail</a></div>
+								</div></li>
+							</ul>
+							</div>
+							<div class="scroll_right" id="RightArr"></div>
+						</div>
+			</div>
+		</div>
+		
+
+		
+		<div id="from-blog-wrap">
+			<div class="sixteen columns" id="from-blog" align="center" style="background:#e1e1e1; padding:20px; padding-top:0; margin-top:80px; margin-left:40px; width:1180px; height:485px; border-radius:15px;">
+				<a href="#from-blog">
+				<div style="background:url(images/triangle_bas1.png) no-repeat; margin-left:15px; height: 50px; width: 150px; background-size: 100% 90%;"></div></a>
+				<div class="information-header" id="information-header2" style="padding-bottom:30px; margin-left:40px; margin:30px;" >
+				<div>Vous êtes attiré(e) par nos 3 bonnes raisons</div> 
+				</div>
+				<ul id="blog-slider" style="margin-left:90px; padding-left:35px;">
+					<li style="float:left;" >
+						<div class="blog-slider-text-wrap" name="blog-text">
+							<span class="slider-post-title">Organisme</span>						
+						</div>
+						<div class="bord_img">
+						<a href="http://www.youtube.com/embed/pvohlBiQo-4" target="blank">
+							<img name="img-part" src="images/organisme.jpg" onmouseover="over_text(this)" onmouseout="remove_text(this)"/>
+							<div class="main-blog-magnifier"></div>
+						</a>
+						</div>
+					</li>
+					<li style="float:left;">
+						<div class="blog-slider-text-wrap" name="blog-text">
+							<span class="slider-post-title">Services</span>						
+						</div>
+						<div class="bord_img">
+						<a href="http://www.youtube.com/embed/zgP7WMMQyqM" target="blank">
+							<img name="img-part" src="images/service.jpg" onmouseover="over_text(this)" onmouseout="remove_text(this)"/>
+							<div class="main-blog-magnifier"></div>
+						</a>	
+						</div>
+					</li>
+					<li style="float:left;">
+						<div class="blog-slider-text-wrap" name="blog-text">
+							<span class="slider-post-title">Histoire à succès</span>
+							
+						</div>
+						<div class="bord_img">
+						<a href="http://www.youtube.com/embed/6ybLLQcXX_0" target="blank">
+							<img name="img-part" src="images/histoire.jpg" onmouseover="over_text(this)" onmouseout="remove_text(this)"/>
+							<div class="main-blog-magnifier"></div>
+						</a>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>	
+		<div class="divider-after"></div>
+	</div>
+
+	<footer>
+		<div id="footer">
+			<div class="container">
+				
+				<div class="sixteen columns" id="copyright-info">
+					<div>&copy; 2017 All Rights Reserved - Created by LIU BIN</div>
+					
+				</div>
+			</div>
+			<a href="#to-top" id="back-to-top"></a>
+		</div>
+	</footer>
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+<script>
+$(function(){
+   $(".case_li").hover(function(){
+      $(".case_li_txt",this).stop().animate({top:"10px"},{queue:false,duration:160});
+	  $(".case_li_txt",this).css("background-color","#000000");
+	  $(".case_li_txt .span_mr_txt",this).attr("class","span_font");
+   },function(){
+      $(".case_li_txt",this).stop().animate({top:"128px"},{queue:false,duration:160});
+	  $(".case_li_txt",this).css("background-color","#ffffff");
+	  $(".case_li_txt .span_font",this).attr("class","span_mr_txt");
+   })
+})
+</script>
+</body>
+
+
+</html>

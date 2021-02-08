@@ -1,0 +1,33 @@
+/*
+
+user: root
+pwd: systatest
+nom de basedonnee : systaconseilliu
+
+*/
+
+
+CREATE TABLE `newsscrolling` (
+  `NewsID` int(8) NOT NULL auto_increment,
+  `NewsName` varchar(200) NOT NULL default '',
+  `NewsImgPath` varchar(200) default NULL,
+  `NewsTextDebut` varchar(500) default NULL,
+  `NewsSite` varchar(500) default NULL,
+  `NewsCheck` int(5) default '0',
+  PRIMARY KEY  (`NewsID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `listpartner` (
+  `PartnerID` int(8) NOT NULL auto_increment,
+  `PartnerName` varchar(200) NOT NULL default '',
+  `PartnerImgPath` varchar(200) default NULL,
+  `PartnerNumTel` varchar(100) default NULL,
+  `PartnerMail` varchar(100) default NULL,
+  `PartnerAdresse` varchar(200) default NULL,
+  `PartnerSite` varchar(500) default NULL,
+  `PartnerCheck` int(5) default '0',
+  `PartnerRegion` varchar(100) NOT NULL,
+  `PartnerType` varchar(100) NOT NULL,
+  PRIMARY KEY  (`PartnerID`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
